@@ -1,0 +1,19 @@
+body
+{
+	font-size: 16pt;
+	font-family: Ariel;
+	line-height: 18pt;
+	padding-left: 5pt;
+	padding-right: 5pt;
+	padding-top: 5pt;
+}
+
+h1
+{
+  font-size: 70pt;
+	font: Verdanda, Ariel, sans-serif;
+	font-weight: bold;
+	color:black;
+	text-align: center;
+	line-height: 75pt;
+}
