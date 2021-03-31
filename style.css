@@ -2,7 +2,6 @@ body
 {
 	font-size: 16pt;
 	font-family: Ariel;
-	line-height: 18pt;
 	padding-left: 5pt;
 	padding-right: 5pt;
 	padding-top: 5pt;
@@ -15,5 +14,19 @@ h1
 	font-weight: bold;
 	color:black;
 	text-align: center;
-	line-height: 75pt;
+}
+
+h3
+{
+  font-size: 40pt;
+	font: Verdanda, Ariel, sans-serif;
+	font-weight: bold;
+	color:black;
+	text-align: center;
+}
+
+/* h4 is identical to paragraph styling but with centred text*/
+h4
+{
+	text-align: center;
 }
