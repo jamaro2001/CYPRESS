@@ -1,16 +1,13 @@
 body {
 	font-size: 16pt;
 	font-family: Ariel;
-	padding-left: 5pt;
-	padding-right: 5pt;
-	padding-top: 5pt;
+	color:black;
 }
 
 h1 {
   	font-size: 70pt;
 	font: Verdanda, Ariel, sans-serif;
 	font-weight: bold;
-	color:black;
 	text-align: center;
 }
 
