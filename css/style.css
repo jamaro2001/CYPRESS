@@ -26,6 +26,7 @@ h1 h2 h3 {
 
 p {
 	font-size: 16;
+	display: inline;
 	text-align: center;
 }
 
