@@ -3,6 +3,7 @@ body {
 	font-family: Ariel;
 	color:black;
 	background-color: lightblue;
+	display: inline;
 }
 
 h1 {
