@@ -10,6 +10,7 @@ h1 {
 	font: Verdanda, Ariel, sans-serif;
 	font-weight: bold;
 	text-align: center;
+	display:inline;
 }
 
 h3 {
@@ -18,11 +19,13 @@ h3 {
 	font-weight: bold;
 	color:black;
 	text-align: center;
+	display:inline;
 }
 
 /* h4 is identical to paragraph styling but with centred text*/
 h4 {
 	text-align: center;
+	display:inline;
 }
 
 .flex-container {
