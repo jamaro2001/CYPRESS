@@ -1,14 +1,12 @@
 body {
 	font-family: Ariel;
 	color:black;
-	display: inline;
 	background-color: lightgray;
-	text-align:center;
 }
 
 h1 {
   	font-size: 70pt;
-	line-height: 60pt;
+	margin: 0 0;
 }
 
 h2 {
