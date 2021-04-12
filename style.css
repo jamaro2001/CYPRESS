@@ -3,7 +3,6 @@ body {
 	font-family: Ariel;
 	color:black;
 	background-color: lightblue;
-	display:inline;
 }
 
 h1 {
@@ -11,7 +10,7 @@ h1 {
 	font: Verdanda, Ariel, sans-serif;
 	font-weight: bold;
 	text-align: center;
-	margin: 0 auto;
+	margin: auto;
 }
 
 h2 {
