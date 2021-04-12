@@ -27,6 +27,7 @@ p {
 }
 
 .center {
+	margin: 0 auto;
 	display: inline;
 	text-align: center;
 }
