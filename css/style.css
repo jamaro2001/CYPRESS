@@ -1,0 +1,41 @@
+body {
+	font-size: 16pt;
+	font-family: Ariel;
+	color:black;
+	background-color: lightblue;
+	display: inline;
+}
+
+h1 {
+  	font-size: 70pt;
+	font: Verdanda, Ariel, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+}
+
+h2 {
+	font-size: 50pt;
+	font: Verdanda, Ariel, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+  	font-size: 40pt;
+	font: Verdanda, Ariel, sans-serif;
+	font-weight: bold;
+	color:black;
+	text-align: center;
+}
+
+.center {
+	display: inline;
+	text-align: center;
+}
+
+.flex-container {
+  	display: flex;
+  	flex-direction: row;
+	justify-content: space-around;
+}
