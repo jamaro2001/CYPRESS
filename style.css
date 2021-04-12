@@ -2,7 +2,7 @@ body {
 	font-size: 16pt;
 	font-family: Ariel;
 	color:black;
-	background-color: lightblue;
+	background-color: lightblue
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
 	font: Verdanda, Ariel, sans-serif;
 	font-weight: bold;
 	text-align: center;
-	display:inline;
+	display:inline
 }
 
 h3 {
@@ -19,17 +19,17 @@ h3 {
 	font-weight: bold;
 	color:black;
 	text-align: center;
-	display:inline;
+	display:inline
 }
 
 /* h4 is identical to paragraph styling but with centred text*/
 h4 {
 	text-align: center;
-	display:inline;
+	display:inline
 }
 
 .flex-container {
   	display: flex;
   	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-around
 }
