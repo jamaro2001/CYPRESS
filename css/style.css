@@ -2,7 +2,8 @@ body {
 	font-family: Ariel;
 	color:black;
 	display: inline;
-	background-color: gray;
+	background-color: lightgray;
+	text-align:center;
 }
 
 h1 {
