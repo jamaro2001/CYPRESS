@@ -4,6 +4,7 @@ body {
 	background-color: lightgray;
 	padding: 0;
 	margin: auto;
+	display: inline;
 }
 
 h1 {
