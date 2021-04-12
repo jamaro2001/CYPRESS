@@ -13,6 +13,14 @@ h1 {
 	display:inline
 }
 
+h2 {
+	font-size: 50pt;
+	font: Verdanda, Ariel, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	display:inline
+}
+
 h3 {
   	font-size: 40pt;
 	font: Verdanda, Ariel, sans-serif;
@@ -22,10 +30,9 @@ h3 {
 	display:inline
 }
 
-/* h4 is identical to paragraph styling but with centred text*/
-h4 {
+.center {
+	display:inline;
 	text-align: center;
-	display:inline
 }
 
 .flex-container {
