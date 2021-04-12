@@ -2,7 +2,8 @@ body {
 	font-size: 16pt;
 	font-family: Ariel;
 	color:black;
-	background-color: lightblue
+	background-color: lightblue;
+	display:inline;
 }
 
 h1 {
@@ -10,7 +11,7 @@ h1 {
 	font: Verdanda, Ariel, sans-serif;
 	font-weight: bold;
 	text-align: center;
-	display:inline
+	display:inline;
 }
 
 h2 {
@@ -18,7 +19,7 @@ h2 {
 	font: Verdanda, Ariel, sans-serif;
 	font-weight: bold;
 	text-align: center;
-	display:inline
+	display:inline;
 }
 
 h3 {
@@ -27,7 +28,7 @@ h3 {
 	font-weight: bold;
 	color:black;
 	text-align: center;
-	display:inline
+	display:inline;
 }
 
 .center {
@@ -38,5 +39,9 @@ h3 {
 .flex-container {
   	display: flex;
   	flex-direction: row;
-	justify-content: space-around
+	justify-content: space-around;
+}
+
+img {
+	
 }
