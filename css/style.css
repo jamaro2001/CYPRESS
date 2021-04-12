@@ -3,6 +3,7 @@ body {
 	color:black;
 	background-color: lightgray;
 	padding: 0;
+	margin: auto;
 }
 
 h1 {
@@ -29,11 +30,10 @@ p {
 }
 
 img {
-	margin: 0 auto;
+	
 }
 
 .center {
-	margin: 0 auto;
 	display: inline;
 	text-align: center;
 }
