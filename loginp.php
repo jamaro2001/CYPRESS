@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    <header>
+    <div class="flex-container" style="justify-content:space-between;">
+       <h3>CYPRESS</h3>
+       <h3>City of Toronto</h3>
+    </div>
+    <hr>
+  </header>
+    
     <div class="row">
         <div class="col-12 text-center">
              <h1 class="mainHeads">CYPRESS Login</h1>
