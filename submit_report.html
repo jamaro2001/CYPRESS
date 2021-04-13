@@ -16,38 +16,39 @@
   
   <button type="button">LOGOUT</button>
 
-  <label for="fname">Address:</label><br>
-  <input type="text" id="address" name="address"><br>
-
-  <form action="/action_page.php">
-    <p>PROBLEMS AT THE SITE:</p>
-    <input type="radio" id="utility" name="problem" value="utility">
-    <label for="utility">Utility failures</label><br>
-    <input type="radio" id="pothole" name="problem" value="pothole">
-    <label for="pothole">Potholes</label><br>
-    <input type="radio" id="vandalism" name="gender" value="vandalism">
-    <label for="vandalism">City property vandalism</label>
-    <input type="radio" id="erosion" name="problem" value="erosion">
-    <label for="erosion">Eroded streets</label><br>
-    
-    <br>
-    
-    <input type="radio" id="tree" name="problem" value="tree">
-    <label for="tree">Tree collapse</label><br>
-    <input type="radio" id="flood" name="problem" value="flood">
-    <label for="flood">Flooded streets</label><br>
-    <input type="radio" id="growth" name="problem" value="growth">
-    <label for="growth">Mould and spore growth</label><br>
-    <input type="radio" id="roadblock" name="problem" value="roadblock">
-    <label for="roadblock">Garbage or any other road-blocking objects</label><br>
-  </form>
+  <div class="center">
+    <form action="/action_page.php" >
+      <label for="fname" style="font-weight: bold; font-size:20;">Address:</label><br>
+      <input type="text" id="address" name="address"><br>
   
-  <button type="button">Report</button>
-  <button type="button">Cancel</button>
+      $scope.chosen="utility"
+      <h4>PROBLEMS AT THE SITE:</h4>
+      <input type="radio" id="utility" name="problem" ng-model="chosen" value="utility">
+      <label for="utility">Utility failures</label><br>
+      <input type="radio" id="pothole" name="problem" ng-model="chosen" value="pothole">
+      <label for="pothole">Potholes</label><br>
+      <input type="radio" id="vandalism" name="problem" ng-model="chosen" value="vandalism">
+      <label for="vandalism">City property vandalism</label>
+      <input type="radio" id="erosion" name="problem" ng-model="chosen" value="erosion">
+      <label for="erosion">Eroded streets</label><br>
+    
+      <br>
+    
+      <input type="radio" id="tree" name="problem" ng-model="chosen" value="tree">
+      <label for="tree">Tree collapse</label><br>
+      <input type="radio" id="flood" name="problem" ng-model="chosen" value="flood">
+      <label for="flood">Flooded streets</label><br>
+      <input type="radio" id="growth" name="problem" ng-model="chosen" value="growth">
+      <label for="growth">Mould and spore growth</label><br>
+      <input type="radio" id="roadblock" name="problem" ng-model="chosen" value="roadblock">
+      <label for="roadblock">Garbage or any other road-blocking objects</label><br>
+    </form>
   
-<h4>DISCLAIMER: This site is part of a student project, and not actually produced by the City of Toronto.</h4>
-
-<button type="button">FAQ</button>
+    <button type="button">Report</button>
+    <button type="button">Cancel</button>
+  <div class="center">
+<br>
+<button type="button" class="faq">FAQ</button>
 </body>
 
 </html>
