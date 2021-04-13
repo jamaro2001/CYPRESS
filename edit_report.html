@@ -21,11 +21,11 @@
 
   <div class="center">
     <form action="/action_page.php" >
-      <label for="fname">Address:</label><br>
+      <label for="fname" style="font-weight: bold; font-size:20;">Address:</label><br>
       <input type="text" id="address" name="address" value="Placeholder (replace w/ cookie call or something)"><br>
   
       $scope.chosen="utility"
-      <p>PROBLEMS AT THE SITE:</p>
+      <h4>PROBLEMS AT THE SITE:</h4>
       <input type="radio" id="utility" name="problem" ng-model="chosen" value="utility">
       <label for="utility">Utility failures</label><br>
       <input type="radio" id="pothole" name="problem" ng-model="chosen" value="pothole">
