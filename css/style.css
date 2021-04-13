@@ -62,3 +62,7 @@ textarea {
 	height: 20vh;
 	width: 60vw;
 }
+
+input[type=text] {
+	width: 60vw;
+}
