@@ -20,21 +20,20 @@
   <button type="button">LOGOUT</button>
 
   <div class="center">
-    <label for="fname">Address:</label><br>
-    <input type="text" id="address" name="address" value="Placeholder (replace w/ cookie call or something)"><br>
-  
-    $scope.chosen="utility"
-
     <form action="/action_page.php" >
-     <p>PROBLEMS AT THE SITE:</p>
-     <input type="radio" id="utility" name="problem" ng-model="chosen" value="utility">
-     <label for="utility">Utility failures</label><br>
-     <input type="radio" id="pothole" name="problem" ng-model="chosen" value="pothole">
-     <label for="pothole">Potholes</label><br>
-     <input type="radio" id="vandalism" name="problem" ng-model="chosen" value="vandalism">
-     <label for="vandalism">City property vandalism</label>
+      <label for="fname">Address:</label><br>
+      <input type="text" id="address" name="address" value="Placeholder (replace w/ cookie call or something)"><br>
+  
+      $scope.chosen="utility"
+      <p>PROBLEMS AT THE SITE:</p>
+      <input type="radio" id="utility" name="problem" ng-model="chosen" value="utility">
+      <label for="utility">Utility failures</label><br>
+      <input type="radio" id="pothole" name="problem" ng-model="chosen" value="pothole">
+      <label for="pothole">Potholes</label><br>
+      <input type="radio" id="vandalism" name="problem" ng-model="chosen" value="vandalism">
+      <label for="vandalism">City property vandalism</label>
       <input type="radio" id="erosion" name="problem" ng-model="chosen" value="erosion">
-     <label for="erosion">Eroded streets</label><br>
+      <label for="erosion">Eroded streets</label><br>
     
       <br>
     
@@ -51,8 +50,8 @@
     <button type="button">Report</button>
     <button type="button">Cancel</button>
   <div class="center">
-
-<button type="button">FAQ</button>
+<br>
+<button type="button" class="faq">FAQ</button>
 </body>
 
 </html>
