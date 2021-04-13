@@ -17,6 +17,7 @@ if(!isset($_SESSION['username'])){
   <title>CYPRESS - Edit Information</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <script>
@@ -36,6 +37,14 @@ if(!isset($_SESSION['username'])){
 </script>
 
 <body>
+  <header>
+    <div class="flex-container" style="justify-content:space-between;">
+       <h3>CYPRESS</h3>
+       <h3>City of Toronto</h3>
+    </div>
+    <hr>
+  </header>
+
 <?php
  $username = $_SESSION['username']; // POSSIBLE FIX: username w/o quotes?
  $usernames = file("usernames.txt");
