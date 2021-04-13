@@ -3,13 +3,12 @@ body {
 	color:black;
 	background-color: lightgray;
 	padding: 0;
-	margin: auto;
+	margin: 0 0 0 0;
 	display: inline;
 }
 
 h1 {
   	font-size: 70pt;
-	height = 100px;
 }
 
 h2 {
