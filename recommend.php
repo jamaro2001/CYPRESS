@@ -23,16 +23,16 @@
         <div class="col-xs">
         <form action="" method="post" name="login_form">
             <div class="form-group">
-                <label for="text">Email:</label>
-                <input type="text" class="form-control" id="user" name="user" required>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="inputEmail" required>
             </div>
             <div class="form-group">
-                <label for="pwd">Personal Message:</label>
-                <input type="password" class="form-control" id="pwd" name="pwd">
+                <label for="text">Personal Message:</label>
+                <input type="text" class="form-control" id="personalMessage">
+                <small id="messageHelp" class="form-text text-muted">A message is not required.</small>
             </div>
   
-            <button type="submit" class="btn btn-danger" name="login">Submit</button>
-            <?php include("functions/login.php"); ?>
+            <button type="submit" class="btn btn-danger">Submit</button>
         </form> 
         </div>
 
