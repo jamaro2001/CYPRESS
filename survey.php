@@ -31,13 +31,8 @@
     <div class="container">
         <div class="col-xs">
         <form action="" method="post" name="login_form">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">
-                    Check this box if CYPRESS was helpful
-                </label>
-                <br />
-            </div>
+            <label for="customRange2">Were you satisfied with the service? Use the slider to leave your rating.</label>
+            <input type="range" class="custom-range" min="0" max="5" id="customRange2">
             
             <div class="form-group">
                 <label for="text">Feedback:</label>
