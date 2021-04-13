@@ -21,9 +21,9 @@ if(!isset($_SESSION['username'])){
 <?php
 // get user details from files
  $username = $_SESSION['username'];
- $usernames = file("usernames.txt");
- $fnames = file("fnames.txt");
- $lnames = file("lnames.txt");
+ $usernames = file("functions/usernames.txt", FILE_IGNORE_NEW_LINES);
+ $fnames = file("functions/fnames.txt", FILE_IGNORE_NEW_LINES);
+ $lnames = file("functions/lnames.txt", FILE_IGNORE_NEW_LINES);
  $found = false;
  // finding the index number, to be used for all info
  for ($userindx = 0; $userindx < count($usernames); $userindx++) {

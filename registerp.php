@@ -19,8 +19,8 @@
                 return false;
             }
             
-            if((form.new_pwd_conf.value).length < 8){
-                 alert("Password must be at least 8 characters long.");
+            if((form.new_pwd_conf.value).length < 5){
+                 alert("Password must be at least 5 characters long.");
                 return false;
             }
             
@@ -76,8 +76,6 @@
             <?php include("functions/create_account.php"); ?>
         </form> 
         </div>
-
     </div>
-
 </body>
 </html>
