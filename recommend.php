@@ -43,7 +43,11 @@
                 <small id="messageHelp" class="form-text text-muted">A message is not required.</small>
             </div>
   
-            <button type="submit" class="btn btn-danger"> <a href="portal.html">Submit</a> </button>
+            <div class="flex-container" style="justify-content:center">
+                <button type="submit" class="btn btn-danger"> <a href="portal.html">Submit</a> </button>
+                <button type="submit" class="btn btn-danger"> <a href="portal.html">Cancel</a> </button>
+            </div>
+            
         </form> 
         </div>
     </div>
