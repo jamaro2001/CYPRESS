@@ -21,6 +21,9 @@
              <h4 class="mainHeads">Thank you for your feedback!</h>
         </div>
     </div>
+    
+    <button type="submit" class="btn btn-danger"> <a href="portal.html">Return Home</a> </button>
+    
 </body>
 </html>
     
