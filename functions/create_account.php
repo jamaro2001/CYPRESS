@@ -41,7 +41,7 @@ if(isset($_POST['register'])){
     // create session and redirect to homepage
     $_SESSION['username'] = $user_name;
 
-    echo "<script> window.open('home.php', '_self') </script>";
+    echo "<script> window.open('portal.html', '_self') </script>";
 
 }
 ?>
