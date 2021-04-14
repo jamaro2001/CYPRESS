@@ -28,13 +28,15 @@
     <?php
       for ($x = 0; $x = count($reports); $++ 2)
       {
-        echo "<div class='flex-container' style='justify-content:center'>";
+        
         echo "<p>". $reports[$x] ."</p>";
-        echo "<button type='button'><a href='edit_report.html'>Edit</a></button>";
-        echo "<button type='button'> <a href='delete.php'>Delete</a> </button>";
-        echo "</div>";
+        
       }
     ?>
+    <div class="flex-container" style='justify-content:center'>
+      <button type="button"><a href="edit_report.html">Edit</a></button>
+      <button type="button"> <a href="delete.php">Delete</a> </button>
+    </div>
     
   </div>
 </body>
