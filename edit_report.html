@@ -5,9 +5,13 @@
   <meta charset=“UTF-8”>
   <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Edit this Report</title>
+  <title>CYPRESS - Edit Report</title>
 </head>
 
+<?php
+  $address = "2190 Yonge St."
+?>
+  
 <body>
   <header>
     <div class="flex-container" style="justify-content:space-between;">
@@ -19,10 +23,12 @@
 
   <div class="center">
     <form action="/action_page.php" >
-      <label for="fname" style="font-weight: bold; font-size:20;">Address:</label><br>
-      <input type="text" id="address" name="address" value="Placeholder (replace w/ cookie call or something)"><br>
-  
-      $scope.chosen="utility"
+      
+      <?php
+        echo '<label for="fname" style="font-weight: bold; font-size:20;">Address:</label><br>';
+        echo '<input type="text" id="address" name="address" value="' $address . '"><br>';
+      ?>
+      
       <p style="font-weight: bold; font-size:20;">PROBLEMS AT THE SITE:</p>
       <input type="radio" id="utility" name="problem" ng-model="chosen" value="utility">
       <label for="utility">Utility failures</label><br>
@@ -43,8 +49,8 @@
     </form>
   
     <div class="flex-container" style="justify-content:center">
-      <button type="button"> <a href="portal.html">Submit Edit</a> </button>
-      <button type="button"> <a href="allReports.html">Cancel</a> </button>
+      <button type="button"> <a href="allReports.php">Submit Edit</a> </button>
+      <button type="button"> <a href="allReports.php">Cancel</a> </button>
     </div>
   <div class="center">
 <br>
