@@ -26,7 +26,7 @@
       
       <?php
         echo '<label for="fname" style="font-weight: bold; font-size:20;">Address:</label><br>';
-        echo '<input type="text" id="address" name="address" value="' $address . '"><br>';
+        echo '<input type="text" id="address" name="address" value="' . $address . '"><br>';
       ?>
       
       <p style="font-weight: bold; font-size:20;">PROBLEMS AT THE SITE:</p>
