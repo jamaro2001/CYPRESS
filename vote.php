@@ -31,13 +31,30 @@
     <div class="container">
         <div class="col-xs">
         <form action="" method="post" name="login_form">
-            <select id="problems" name="problems">
-                <option value="problem1">Problem 1</option>
-                <option value="problem2">Problem 2</option>
-                <option value="problem3">Problem 3</option>
-                <option value="problem4">Problem 4</option>
-                <option value="problem5">Problem 5</option>
-            </select>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" name="customCheck1" value="1">
+                <label class="custom-control-label" for="customCheck1">Problem 1</label>
+            </div>
+            
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2" name="customCheck2" value="2">
+                <label class="custom-control-label" for="customCheck1">Problem 2</label>
+            </div>
+            
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck3" name="customCheck3" value="3">
+                <label class="custom-control-label" for="customCheck1">Problem 3</label>
+            </div>
+            
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck4" name="customCheck4" value="4">
+                <label class="custom-control-label" for="customCheck1">Problem 4</label>
+            </div>
+            
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck5" name="customCheck5" value="5">
+                <label class="custom-control-label" for="customCheck1">Problem 5</label>
+            </div>
   
             <button type="submit" class="btn btn-danger">Submit</button>
         </form> 
