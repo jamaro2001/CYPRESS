@@ -32,8 +32,8 @@
     <p><em>Are you sure you want to delete this?<em></p>
   
     <div class="flex-container" style="justify-content: center;">
-      <button type="button"> <a href="allReports.html">Yes </a> </button>
-      <button type="button"> <a href="allReports.html">No </a> </button>
+      <button type="button"> <a href="allReports.php">Yes </a> </button>
+      <button type="button"> <a href="allReports.php">No </a> </button>
     </div>
   </div>
 
