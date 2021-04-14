@@ -23,11 +23,11 @@
   
     <p><em>You are about to delete the following report:</em></p>
 
-    <p>Address:</p><br>
-    <?php echo "<p>" . $address . "</p>"; ?>
+    <p>Address:</p>
+    <?php echo "<p>" . $address . "</p> <br>"; ?>
   
-    <p>Problem at site:</p><br>
-    <?php echo "<p>" . $problem . "</p>"; ?>
+    <p>Problem at site:</p>
+    <?php echo "<p>" . $problem . "</p> <br>"; ?>
   
     <p><em>Are you sure you want to delete this?<em></p>
   
