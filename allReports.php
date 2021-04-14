@@ -30,7 +30,7 @@
       {
         echo "<div class='flex-container' style='justify-content:center'>";
         echo "<p>". $reports[$x] ."</p>";
-        echo "<button type='button'><a href='edit_report.html'>Edit</a></button>";
+        echo "<button type='button'><a href='edit_report.php'>Edit</a></button>";
         echo "<button type='button'> <a href='delete.php'>Delete</a> </button>";
         echo "</div>";
       }
