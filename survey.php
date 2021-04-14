@@ -40,7 +40,7 @@
                 <small id="messageHelp" class="form-text text-muted">Feedback is not required.</small>
             </div>
   
-            <button type="submit" class="btn btn-danger"> <a href="survey_confirmation.php">Submit</a> </button>
+            <button type="submit" class="btn btn-danger"> <a href="logout.html">Submit</a> </button>
         </form> 
         </div>
     </div>
