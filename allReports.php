@@ -36,6 +36,10 @@
       }
     ?>
     
+    <div class="flex-container" style="justify-content: center;">
+      <button type="button"> <a href="portal.html">Return to portal</a> </button>
+    </div>
+    
   </div>
 </body>
 
