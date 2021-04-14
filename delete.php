@@ -5,6 +5,11 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
+<?php
+  $address = "2190 Yonge St.";
+  $problem = "City property vandalism";
+?>
+
 <body>
   <header>
     <div class="flex-container" style="justify-content:space-between;">
@@ -16,17 +21,15 @@
   
   <div class="center">
   
-    <em style="text-align:center">You are about to delete the following report:</em>
+    <p><em>You are about to delete the following report:</em></p>
 
-    <label style="text-align:center" for="fname">Address:</label><br>
-    <field style="text-align:center" type="staticText" txt="$address" id="address"/><br>
+    <p>Address:</p><br>
+    <?php echo "<p>" . $address . "</p>"; ?>
   
-     $scope.chosen="Utility failures"
+    <p>Problem at site:</p><br>
+    <?php echo "<p>" . $problem . "</p>"; ?>
   
-    <label style="text-align:center" for="problem">Problem at site:</label><br>
-    <field style="text-align:center" type="staticText" txt="$problem" id="problem"/><br>
-  
-    <em style="text-align:center">Are you sure you want to delete this?<em>
+    <p><em>Are you sure you want to delete this?<em></p>
   
     <div class="flex-container" style="justify-content: center;">
       <button type="button"> <a href="allReports.html">Yes </a> </button>
