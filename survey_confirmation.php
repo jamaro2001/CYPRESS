@@ -15,15 +15,12 @@
     </div>
     <hr>
   </header>
-    
+
     <div class="row">
-        <div class="col-12 text-center">
-             <h1 class="mainHeads">CYPRESS Survey Confirmation</h1>
+         <div class="col-12 text-center">
+             <h4 class="mainHeads">Thank you for your feedback!</h>
         </div>
     </div>
+</body>
+</html>
     
-    <div class="container">
-        <h6>
-            Thank you for your feedback!
-        </h6>
-    </div>
