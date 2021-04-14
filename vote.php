@@ -45,7 +45,7 @@
 				
                 <input type="checkbox"id="customCheck5" name="customCheck5" value="5">
                 <label class="custom-control-label" for="customCheck5">2190 Yonge St., City property vandalism</label> <br>
-            <button type="submit" class="btn btn-danger">Submit</button>
+            <button type="submit" class="btn btn-danger"> <a href="vote_confirmation.html">Submit</a> </button>
         </form> 
         </div>
     </div>
