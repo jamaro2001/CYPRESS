@@ -31,30 +31,13 @@
     <div class="container">
         <div class="col-xs">
         <form action="" method="post" name="login_form">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Problem 1</label>
-            </div>
-            
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Problem 2</label>
-            </div>
-            
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Problem 3</label>
-            </div>
-            
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Problem 4</label>
-            </div>
-            
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Problem 5</label>
-            </div>
+            <select id="problems" name="problems">
+                <option value="problem1">Problem 1</option>
+                <option value="problem2">Problem 2</option>
+                <option value="problem3">Problem 3</option>
+                <option value="problem4">Problem 4</option>
+                <option value="problem5">Problem 5</option>
+            </select>
   
             <button type="submit" class="btn btn-danger">Submit</button>
         </form> 
