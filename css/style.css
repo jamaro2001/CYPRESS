@@ -41,6 +41,11 @@ p {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .imgbig {
 	display: block;
 	margin-left: auto;
