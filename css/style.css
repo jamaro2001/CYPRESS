@@ -91,3 +91,8 @@ input[type=text] {
 	float: right;
 	
 }
+
+button {
+	margin-right: 3vw;
+	margin-left: 3vw;
+}
