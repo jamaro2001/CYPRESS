@@ -47,7 +47,7 @@
             
 	    	<div class="flex-container" style="justify-content: center;">
 			<button type="submit" class="btn btn-danger"> <a href="vote_confirmation.php">Submit</a> </button>
-      			<button type="button"> <a href="portal.html">Return to portal</a> </button>
+      			<button type="button" class="btn btn-danger"> <a href="portal.html">Return to portal</a> </button>
     	    	</div>
         </form> 
         </div>
