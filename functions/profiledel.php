@@ -1,6 +1,6 @@
 <?php
 session_start();
-$username = $_SESSION['username'];
+$username = $_COOKIE["user"];
 $usernames = file("usernames.txt");
 $fnames = file("fnames.txt");
 $lnames = file("lnames.txt");
@@ -40,6 +40,8 @@ foreach ($pwds as $d) {
   fwrite($pww, $d."\r\n");
 }
 fclose($pww);
+setcookie("user", "", time() - 3600);
+setcookie("pwd", "", time() - 3600);
 session_destroy();
 // destroy session and redirect to login page
 echo "<script> window.open('../loginp.php', '_self') </script>";

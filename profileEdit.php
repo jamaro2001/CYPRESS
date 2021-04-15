@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 
 <?php
-// allows editing some basic details
-
-//if not logged in ask for it
 session_start();
 //include("functions/header.php");
-
-if(!isset($_SESSION['username'])){
+// if not logged in, ask for it
+if(!isset($_COOKIE["user"])){
+    echo "<script> alert('Not logged in. Redirecting...') </script>";
 	header("location: loginp.php");
 }
 ?>
@@ -18,22 +16,26 @@ if(!isset($_SESSION['username'])){
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <script>
 // check if input values are good and legal
     function validate(formName) {
-    alert(formName.first_name.value)
-    if(!/^[a-zA-Z]+$/.test(formName.first_name.value)) {
-        alert("Invalid first name");
-        return false;
-    }
-    if(!/^[a-zA-Z]+$/.test(formName.last_name.value)) {
-        alert("Invalid last name");
-        return false;
-    }
+        alert(formName.first_name.value)
+        if(!/^[a-zA-Z]+$/.test(formName.first_name.value)) {
+            alert("Invalid first name");
+            return false;
+        }
+        if(!/^[a-zA-Z]+$/.test(formName.last_name.value)) {
+            alert("Invalid last name");
+            return false;
+        }
   
-}
+    }
 </script>
 
 <body>
@@ -46,42 +48,37 @@ if(!isset($_SESSION['username'])){
   </header>
 
 <?php
- $username = $_SESSION['username']; // POSSIBLE FIX: username w/o quotes?
- $usernames = file("usernames.txt");
- $fnames = file("fnames.txt");
- $lnames = file("lnames.txt");
- $found = false;
- // finding the index number, to be used for all info
- for ($userindx = 0; $userindx < count($usernames); $userindx++) {
-     if ($usernames[$userindx] == $username) {
+$username = $_COOKIE["user"];
+$usernames = file("functions/usernames.txt", FILE_IGNORE_NEW_LINES);
+$fnames = file("functions/fnames.txt", FILE_IGNORE_NEW_LINES);
+$lnames = file("functions/lnames.txt", FILE_IGNORE_NEW_LINES);
+$found = false;
+// finding the index number, to be used for all info
+for ($userindx = 0; $userindx < count($usernames); $userindx++) {
+    if ($usernames[$userindx] == $username) {
         $found = true;
         break;
-     }
- }
+    }
+}
 // fill pre existing info in editable fields
- if ($found) {
-    printf("
-        
+if ($found) {
+    printf("  
     <div class='container-fluid'>
-        <h2 class='mainHeads'>$_SESSION['username']</h2>
-        <h4>Edit Information</h4>
+        <h2 class='mainHeads'>$_COOKIE[user]</h2>
+        <h2>Edit Information</h2>
         <form action='functions/update.php' method='post' name='update' onsubmit='return validate(update)'>
-
             <div class='form-group'>
                 <label for='first_name'>First Name:</label>
                 <input type='text' class='form-control' id='first_name' value='%s' name='first_name' required>
             </div>
-
             <div class='form-group'>
                 <label for='last_name'>Last Name:</label>
                 <input type='text' class='form-control' id='last_name' value='%s' name='last_name' required>
             </div>
-
             <button type='submit' class='btn btn-info' name='update'>Update</button>
-            
         </form>
     </div>
-    ", $fnames[$userindx], $lnames[$userindx]);
+    ",$fnames[$userindx], $lnames[$userindx]);
  }
 ?>
 

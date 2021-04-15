@@ -11,7 +11,7 @@ if(isset($_POST['update'])){
         exit();
     }
     // get user name
-    $username = $_SESSION['username'];
+    $username = $_SESSION["user"];
     $usernames = file("usernames.txt");
     $fnames = file("fnames.txt");
     $lnames = file("lnames.txt");

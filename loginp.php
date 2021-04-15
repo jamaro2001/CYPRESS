@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,11 +31,15 @@
             <form action="" method="post" name="login_form">
                 <div class="form-group">
                     <label for="text">Username:</label>
-                    <input type="text" class="form-control" id="user" name="user" required>
+                    <input type="text" class="form-control" id="user" name="user" value="<?php if(isset($_COOKIE["user"])) { echo $_COOKIE["user"]; } ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" name="pwd" required>
+                    <input type="password" class="form-control" id="pwd" name="pwd" value="<?php if(isset($_COOKIE["pwd"])) { echo $_COOKIE["pwd"]; } ?>" required>
+                </div>
+                <div class="form-group">
+                    <label for="remember">Remember me</label>
+                    <input type="checkbox" class="form-control" id="remember" name="remember">
                 </div>
                 <button type="submit" class="btn btn-danger" name="login">Login</button>
                 <?php include("functions/login.php"); ?>

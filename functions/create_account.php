@@ -39,7 +39,7 @@ if(isset($_POST['register'])){
     // file_put_contents('functions/lnames.txt', $last_name . "\r\n", FILE_APPEND);
     // file_put_contents('functions/pwds.txt', $password . "\r\n", FILE_APPEND);
     // create session and redirect to homepage
-    $_SESSION['username'] = $user_name;
+    $_COOKIE["user"] = $user_name;
 
     echo "<script> window.open('portal.html', '_self') </script>";
 

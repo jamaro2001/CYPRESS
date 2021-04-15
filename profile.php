@@ -3,7 +3,8 @@
 <?php
 session_start();
 // if not logged in, ask for it
-if(!isset($_SESSION['username'])){
+if(!isset($_COOKIE["user"])){
+    echo "<script> alert('Not logged in. Redirecting...') </script>";
 	header("location: loginp.php");
 }
 ?>
@@ -28,7 +29,7 @@ if(!isset($_SESSION['username'])){
 
 <?php
 // get user details from files
- $username = $_SESSION['username'];
+ $username = $_COOKIE["user"];
  $usernames = file("functions/usernames.txt", FILE_IGNORE_NEW_LINES);
  $fnames = file("functions/fnames.txt", FILE_IGNORE_NEW_LINES);
  $lnames = file("functions/lnames.txt", FILE_IGNORE_NEW_LINES);
@@ -72,7 +73,7 @@ if(!isset($_SESSION['username'])){
     ",$usernames[$userindx], $fnames[$userindx], $lnames[$userindx]);
  }
 ?>
-<a class="nav-link" href="profileEdit.php">Edit</a>
-<a class="nav-link" href="functions/profiledel.php">Delete Profile (IRREVERSIBLE!)</a>
+<a class="btn btn-primary" href="profileEdit.php">Edit</a>
+<a class="btn btn-danger" href="functions/profiledel.php">Delete Profile (IRREVERSIBLE!)</a>
 </body>
 </html>
