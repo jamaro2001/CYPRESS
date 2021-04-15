@@ -35,7 +35,7 @@ if(isset($_POST['update'])){
     }
     fclose($lnw);     
     echo "<script> alert('Success!') </script>";
-    echo "<script> window.open('http://FIX.php', '_self') </script>"; //FIX: USE HARD LINK TO SAME PAGE
+    echo "<script> window.open('https://www.cs.ryerson.ca/~jamaro/CYPRESS/profile.php', '_self') </script>"; //FIX: USE HARD LINK TO SAME PAGE
 
 }
 
