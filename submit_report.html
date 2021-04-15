@@ -15,7 +15,7 @@
   </header>
   
   <div class="center">
-    <form action="/action_page.php" >
+    <form action="functions/newReport.php" method="post" >
       <label for="fname" style="font-weight: bold; font-size:20;">Address:</label><br>
       <input type="text" id="address" name="address"><br>
       
@@ -36,12 +36,14 @@
       <label for="growth">Mould and spore growth</label><br>
       <input type="radio" id="roadblock" name="problem" ng-model="chosen" value="roadblock">
       <label for="roadblock">Garbage or any other road-blocking objects</label><br>
+      
+      <div class="flex-container" style="justify-content:center">
+        <button type="submit"> Submit Report </button>
+        <button type="button"> <a href="portal.html">Cancel</a> </button>
+      </div>
     </form>
   
-    <div class="flex-container" style="justify-content:center">
-      <button type="button"> <a href="allReports.php">Report</a> </button>
-      <button type="button"> <a href="portal.html">Cancel</a> </button>
-    </div>
+    
   <div class="center">
 <br>
 <button type="button" class="faq"> <a href="FAQ.html">FAQ</a> </button>
